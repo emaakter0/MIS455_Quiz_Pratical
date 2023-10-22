@@ -1,0 +1,66 @@
+
+I see what you mean now. To have the first picture on the right with lines on the left, you can update the CSS like this:
+
+```css
+/* Set a background color and text color for the body */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the 'Shop Now' and 'EXPLORE NOW' buttons */
+button {
+    background-color: #FF5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Style the 'image2' */
+.image2 {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Style the 'food sell' text */
+.food.sell {
+    font-size: 18px;
+    color: #777;
+    margin: 10px auto;
+}
+
+/* Style the 'food_description' h3 */
+.food_description h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px auto;
+}
+
+/* Add some spacing between elements */
+.img1, .image2, .food_description {
+    margin-top: 20px;
+}
+
+/* Adjust the layout for first_part and last_part */
+.first_part {
+    text-align: right;
+    width: 45%;
+    order: 2; /* Change the order to 2 to move it to the right */
+}
+
+.last_part {
+    text-align: left;
+    width: 45%;
+    order: 1; /* Change the order to 1 to move it to the left */
+}
+```
+
+With this updated code, the first picture will be on the right, and the lines and buttons will be on the left.
